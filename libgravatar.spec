@@ -21,6 +21,8 @@ BuildRequires: cmake(Qt5Core)
 BuildRequires: cmake(Qt5Test)
 BuildRequires: cmake(Qt5Qml)
 BuildRequires: cmake(KF5PimCommon)
+BuildRequires: cmake(KF5CalendarCore)
+BuildRequires: cmake(KF5Gpgmepp)
 
 %description
 KDE library for Gravatar support
