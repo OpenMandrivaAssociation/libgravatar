@@ -24,6 +24,7 @@ BuildRequires: cmake(KF5PimCommon)
 BuildRequires: cmake(KF5CalendarCore)
 BuildRequires: cmake(KF5Gpgmepp)
 BuildRequires: cmake(KF5Akonadi)
+BuildRequires: boost-devel
 
 %description
 KDE library for Gravatar support.
