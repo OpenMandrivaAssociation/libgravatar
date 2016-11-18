@@ -23,9 +23,10 @@ BuildRequires: cmake(Qt5Qml)
 BuildRequires: cmake(KF5PimCommon)
 BuildRequires: cmake(KF5CalendarCore)
 BuildRequires: cmake(KF5Gpgmepp)
+BuildRequires: cmake(KF5Akonadi)
 
 %description
-KDE library for Gravatar support
+KDE library for Gravatar support.
 
 %package -n %{libname}
 Summary: KDE library for Gravatar support
@@ -33,7 +34,7 @@ Group: System/Libraries
 Requires: %{name} = %{EVRD}
 
 %description -n %{libname}
-KDE library for Gravatar support
+KDE library for Gravatar support.
 
 %package -n %{devname}
 Summary: Development files for %{name}
@@ -46,10 +47,9 @@ Development files (Headers etc.) for %{name}.
 %prep
 %setup -q
 %apply_patches
+%cmake_kde5
 
 %build
-%cmake_kde5
-cd ../
 %ninja -C build
 
 %install
