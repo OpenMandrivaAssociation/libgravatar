@@ -22,7 +22,6 @@ BuildRequires: cmake(Qt5Test)
 BuildRequires: cmake(Qt5Qml)
 BuildRequires: cmake(KF5PimCommon)
 BuildRequires: cmake(KF5CalendarCore)
-BuildRequires: cmake(KF5Gpgmepp)
 BuildRequires: cmake(KF5Akonadi)
 BuildRequires: boost-devel
 
