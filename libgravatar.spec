@@ -18,11 +18,19 @@ License: GPL
 Group: System/Libraries
 BuildRequires: cmake(ECM)
 BuildRequires: cmake(Qt5Core)
+BuildRequires: cmake(Qt5Gui)
 BuildRequires: cmake(Qt5Test)
+BuildRequires: cmake(Qt5Network)
+BuildRequires: cmake(Qt5Widgets)
 BuildRequires: cmake(Qt5Qml)
 BuildRequires: cmake(KF5PimCommon)
 BuildRequires: cmake(KF5CalendarCore)
 BuildRequires: cmake(KF5Akonadi)
+BuildRequires: cmake(KF5TextWidgets)
+BuildRequires: cmake(KF5KIO)
+BuildRequires: cmake(KF5I18n)
+BuildRequires: cmake(KF5Config)
+BuildRequires: cmake(KF5WidgetsAddons)
 BuildRequires: boost-devel
 
 %description
