@@ -3,7 +3,7 @@
 %define devname %mklibname KF5Gravatar -d
 
 Name: libgravatar
-Version:	19.04.3
+Version:	19.07.80
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -65,8 +65,8 @@ Development files (Headers etc.) for %{name}.
 %find_lang %{name}
 
 %files -f %{name}.lang
-%{_sysconfdir}/xdg/libgravatar.categories
-%{_sysconfdir}/xdg/libgravatar.renamecategories
+%{_datadir}/qlogging-categories5/libgravatar.categories
+%{_datadir}/qlogging-categories5/libgravatar.renamecategories
 
 %files -n %{libname}
 %{_libdir}/*.so.%{major}*
