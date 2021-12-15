@@ -32,6 +32,9 @@ BuildRequires: cmake(KF5I18n)
 BuildRequires: cmake(KF5Config)
 BuildRequires: cmake(KF5WidgetsAddons)
 BuildRequires: boost-devel
+# For QCH format docs
+BuildRequires: doxygen
+BuildRequires: qt5-assistant
 
 %description
 KDE library for Gravatar support.
