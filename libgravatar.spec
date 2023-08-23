@@ -3,7 +3,7 @@
 %define devname %mklibname KF5Gravatar -d
 
 Name: libgravatar
-Version:	23.04.3
+Version:	23.08.0
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -23,9 +23,9 @@ BuildRequires: cmake(Qt5Test)
 BuildRequires: cmake(Qt5Network)
 BuildRequires: cmake(Qt5Widgets)
 BuildRequires: cmake(Qt5Qml)
-BuildRequires: cmake(KF5PimCommon)
+BuildRequires: cmake(KPim5PimCommon)
 BuildRequires: cmake(KF5CalendarCore)
-BuildRequires: cmake(KF5Akonadi)
+BuildRequires: cmake(KPim5Akonadi)
 BuildRequires: cmake(KF5TextWidgets)
 BuildRequires: cmake(KF5KIO)
 BuildRequires: cmake(KF5I18n)
