@@ -20,7 +20,7 @@ Source0:	https://invent.kde.org/pim/libgravatar/-/archive/%{gitbranch}/libgravat
 Source0: http://download.kde.org/%{ftpdir}/release-service/%{version}/src/libgravatar-%{version}.tar.xz
 %endif
 Summary: KDE library for Gravatar support
-URL: http://kde.org/
+URL: https://kde.org/
 License: GPL
 Group: System/Libraries
 BuildRequires: cmake(ECM)
