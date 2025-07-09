@@ -45,6 +45,8 @@ BuildRequires: doxygen
 BuildRequires: qt6-qttools-assistant
 BuildSystem: cmake
 BuildOption: -DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+# Renamed after 6.0 2025-07-10
+%rename plasma6-libgravatar
 
 %description
 KDE library for Gravatar support.
